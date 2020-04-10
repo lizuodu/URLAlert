@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<meta charset="utf-8" />
+
+<head>
+    <title>设置</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background: white;
+            width: 20rem;
+            height: 20rem;
+            font-size: 1rem;
+        }
+
+        .settings {
+            width: 100%;
+            margin: 10px;
+        }
+
+        textArea {
+            height: 10rem;
+            width: 90%;
+        }
+
+        .note {
+            margin-top: 2px;
+            margin-bottom: 5px;
+            font-size: .8rem;
+        }
+    </style>
+    <script src="options.js"></script>
+</head>
+
+<body>
+    <div class="settings">
+        <h3> 设置url </h3>
+        <div class="note">
+            格式：host style[topbar|page]
+            <br />
+            <strong>
+                www.baidu.com topbar<br />
+                www.github.com page
+            </strong>
+            <br />
+        </div>
+
+        <div>
+            <textarea id="urlList"></textarea>
+        </div>
+
+        <div>
+            <input type="button" id="save" value="保存" />
+        </div>
+    </div>
+</body>
+
+</html>
