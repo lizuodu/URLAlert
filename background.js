@@ -60,7 +60,12 @@ var _addAlertDivsToPage = function (tabId, tab) {
                     });
 
                     if ("${pref.style}" == "page") {
-
+                        var flashDiv = document.getElementsByClassName('flash')[0];
+                        if (flashDiv) {
+                            setTimeout(function() {
+                                flashDiv.remove();
+                            }, 2000);
+                        }
                     }
                 `
             }, _=> {
